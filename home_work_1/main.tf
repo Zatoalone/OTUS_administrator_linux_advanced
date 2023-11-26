@@ -9,7 +9,7 @@ resource "yandex_compute_instance" "default" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd8m3j9ott9u69hks0gg" # Ubuntu, 22.04 LTS
+      image_id = "fd8pnse1rshdvced0u8h" # Debian 11
     }
 
   }
