@@ -1,1 +1,2 @@
-# OTUS_administrator_linux_advanced
+# OTUS administrator linux advanced
+* [Домашняя работа #1](/home_work_1/)
