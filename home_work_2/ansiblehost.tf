@@ -20,7 +20,6 @@ resource "yandex_compute_instance" "ansible" {
   }
 
   metadata = {
-    #ssh-keys = "${var.ssh_user}:${tls_private_key.ssh.public_key_openssh}"
     user-data = "#cloud-config\nusers:\n  - name: ${var.ssh_user}\n    groups: sudo\n    shell: /bin/bash\n    sudo: 'ALL=(ALL) NOPASSWD:ALL'\n    ssh-authorized-keys:\n      - ${tls_private_key.ssh.public_key_openssh}"
   }
 

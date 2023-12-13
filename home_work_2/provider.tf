@@ -7,8 +7,6 @@ terraform {
   required_version = ">= 0.13"
 }
 
-
-// Configure the Yandex.Cloud provider
 provider "yandex" {
   token     = var.auth_token
   cloud_id  = var.cloud_id_variable

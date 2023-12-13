@@ -1,4 +1,4 @@
-[gfs_hosts]
+[cluster_hosts]
 %{ for hostname in cluster_hosts ~}
 ${hostname}
 %{ endfor ~}
